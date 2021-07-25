@@ -29,11 +29,11 @@
 
 
 .vl {
-  border-left: 7px solid #b1afdf;
+  border-left: 2.5px solid #85859b;
   position: absolute;
   left: 50%;
   margin-top: 160px;
-  top: 0;
+  top: 58px;
   max-height: 100%;
   height: 41.5%;
   
@@ -48,7 +48,7 @@ html {
 body {
   padding: 20px;
   font-family: cursive;
-  background-image: linear-gradient(rgb(15, 18, 20),  rgb(15, 18, 20) , rgb(15, 18, 20));
+  background-image: linear-gradient(rgb(1, 1, 1),  rgb(1, 1, 1) , rgb(1, 1, 1));
 }
 /* background: rgb(15, 18, 20); */
 
@@ -76,7 +76,7 @@ h3 {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
 }
 
 /* Track */
@@ -86,7 +86,7 @@ h3 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(56, 69, 77);
+  background: rgb(84, 101, 112);
 }
 
 /* Handle on hover */
@@ -154,7 +154,7 @@ h3 {
     float: none;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1600px; }
+    max-width: 1550px; }
 
 
 
@@ -171,13 +171,113 @@ h3 {
     float: left;
     width: 30%; }
 
-  .nav-container {
-    float: right;
-    width: 70%; }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    .openMenu {
+      font-size: 2rem;
+      margin: 35.5px;
+      margin-left: 88%;
+      display: none;
+      cursor: pointer;
+      color: rgb(212, 212, 212);
+  }
+
+  .mainMenu .closeMenu{
+    font-size: 1.5rem;
+    margin-top: 76px;
+    margin-left: 76%;
+    display: none;
+    cursor: pointer;
+    color: rgb(212, 212, 212);
+}
+.icons i {
+  font-size: 2rem;
+  margin-top: 10%;
+  margin-left: 37%;
+  margin-right: 40%;
+  display: none;
+  cursor: pointer;
+  color: rgb(212, 212, 212);
+  
+}
+.icons{
+  /* color: aqua; */
+  text-align: center;
+}
+
+.fa-vimeo:hover {color: rgb(38, 156, 246);}
+.fa-instagram:hover {color: rgb(226, 99, 194);}
+
+
+    @media(max-width: 710px){
+      .nav-container {
+        /* float: right; */
+        /* width: 70%;  */
+        display: none;
+      }
+       
+      .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top .5s ease;
+        display: none;
+    }
+
+        
+      .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 0;
+
+    }
+    .openMenu {
+        display: block;
+    }
+    /* .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    } */
+    .icons i {
+        display: inline-block;
+        padding: 2px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   .logo {
-    font-family: Ink Free;
+    font-family: cursive;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -189,19 +289,20 @@ h3 {
 
     .logo,
     .logo a {
-      color: #ffffff; }
+      color: #e4e4e4; }
     .logo a:hover {
       color: #b1afdf;
       font-style: normal;
       font-weight: 400;}
 
   .title_tom{
-    filter: brightness(100);
+    /* filter: brightness(100); */
     /* color: rgb(182, 207, 201); */
     position: absolute;
+    /* margin-left: 44px; */
     top: 54px;
     width: 111px;
-    opacity: 1;
+    opacity: .8;
   }
 
   nav {
@@ -210,32 +311,23 @@ h3 {
     padding-bottom: 30px;
     padding-top: 40px;
     width: 100%; }
-    nav .gallery-title a {
-      color: #ffffff;
-      font-family: Franklin Gothic Medium;
-      text-transform: uppercase;
-      opacity: .9;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 38px;}
-      nav .gallery-title a:hover {
-        color: #b1afdf;
-        font-style: normal;
-        font-weight: 400;}
+
 
 
     nav .page-title a {
-      color: #ffffff;
-      font-family: Franklin Gothic Medium;
+      color: #868686;
+      font-family: Arial, Helvetica, sans-serif;
       text-transform: uppercase;
       opacity: .9;
-      font-size: 18px;
+      font-size: 20px;
       font-style: normal;
-      font-weight: 400;
-      line-height: 38px;}
+      font-weight: lighter;
+      line-height: 38px;
+      font-stretch:semi-condensed;
+    }
+      
       nav .page-title a:hover {
-        color: #b1afdf;
+        color: #cbcbfd;
         font-style: normal;
         font-weight: 400;}
 
@@ -254,47 +346,10 @@ h3 {
       height: 30px;
       opacity: .85;
       width: 28px; }
-    @media (max-width: 768px) {
-      .pf-nav-social li {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        padding-left: 8px;
-        padding-right: 0px; } }
-    @media (max-width: 540px) {
-      .pf-nav-social li {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        padding-left: 7px;
-        padding-right: 0px; } }
 
 
-  .masthead-social {
-    text-align: center; }
-    .masthead-social li {
-      padding-top: 40px;
-      padding-bottom: 15px;
-      padding-left: 0px;
-      padding-right: 15px; }
-    .masthead-social a:hover svg {
-      fill: #ffffff;
-      opacity: 1; }
-    .masthead-social svg {
-      fill: #ffffff;
-      height: 30px;
-      opacity: 1;
-      width: 30px; }
-    @media (max-width: 768px) {
-      .masthead-social li {
-        padding-top: 32px;
-        padding-bottom: 12px;
-        padding-left: 0px;
-        padding-right: 12px; } }
-    @media (max-width: 540px) {
-      .masthead-social li {
-        padding-top: 26px;
-        padding-bottom: 10px;
-        padding-left: 0px;
-        padding-right: 10px; } }
+
+ 
 
   nav {
     padding-left: 0%;
@@ -354,6 +409,7 @@ h3 {
         max-width: 1800px;
         margin-left: auto;
         margin-right: auto;
+        color: #e4e4e4;
     }
 
     .service + .service {
@@ -362,15 +418,17 @@ h3 {
 }
 
 
+
 .about__body{
   font-family: arial;
   position: absolute;
   opacity: 1;
   left: 52.3%;
   margin-top: 0%;
-  max-width: 15%;
+  max-width: 250px;
   min-width: 170px;
   width: auto;
+  color: #e4e4e4;
 }
 
 .about_img{
@@ -437,10 +495,9 @@ h3 {
   left: 0;
   opacity: 0;
   transition: opacity .2s;
-  background: rgba(0, 0, 0, 0.4);
-  color: rgb(235, 235, 235);
+  background: rgba(0, 0, 0, 0.7);
+  color: #e4e4e4;
   
-  /* position the text in t’ middle*/
   display: flex;
   align-items: top;
   justify-content: left;
@@ -487,3 +544,46 @@ h3 {
   visibility: hidden;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
