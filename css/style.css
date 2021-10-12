@@ -99,7 +99,7 @@ h3 {
   .container{
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
-    opacity: .2;
+    opacity: .12;
     width: 100%;
     clear: both;
     position: relative;
@@ -235,7 +235,7 @@ h3 {
         left: 0;
         z-index: 10;
         flex-direction: column;
-        justify-content: center;
+        justify-content: center;    
         align-items: center;
         background: #000;
         transition: top .5s ease;
@@ -438,7 +438,7 @@ h3 {
   width: 40%;
   max-width: 340px;
   min-width: 300px;
-  box-shadow: 0 0 22px 22px rgb(18, 18, 18) inset;
+  /* box-shadow: 0 0 22px 22px rgb(18, 18, 18) inset; */
 }
 
 .about_video{
