@@ -47,7 +47,7 @@ html {
 
 body {
   padding: 20px;
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
   background-image: linear-gradient(rgb(1, 1, 1),  rgb(1, 1, 1) , rgb(1, 1, 1));
 }
 /* background: rgb(15, 18, 20); */
@@ -319,18 +319,22 @@ h3 {
       font-family: Arial, Helvetica, sans-serif;
       text-transform: uppercase;
       opacity: .9;
-      font-size: 20px;
+      font-size: 19px;
       font-style: normal;
       font-weight: lighter;
       line-height: 38px;
       font-stretch:semi-condensed;
+      transition: all .25s linear;
+
     }
       
       nav .page-title a:hover {
-        color: #cbcbfd;
-        font-style: normal;
-        font-weight: 400;}
+        color: #b8c6ff;
+        opacity: 1;
+      }
 
+
+        
   .pf-nav-social {
     text-align: left; }
     .pf-nav-social li {
@@ -544,33 +548,6 @@ h3 {
   visibility: hidden;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
