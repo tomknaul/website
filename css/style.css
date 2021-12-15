@@ -49,7 +49,9 @@ body {
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: linear-gradient(rgb(1, 1, 1),  rgb(1, 1, 1) , rgb(1, 1, 1));
+  -webkit-tap-highlight-color: transparent;
 }
+
 /* background: rgb(15, 18, 20); */
 
 img {
@@ -212,6 +214,7 @@ h3 {
 .fa-instagram {color: rgb(226, 99, 194);}
 
 .fa-twitter {color: rgb(19, 123, 202);}
+
 /* .downloadicon {margin-top: -1px;} */
 
 /* .fa-vimeo:hover {color: rgb(38, 156, 246);}
@@ -328,7 +331,7 @@ h3 {
       font-weight: lighter;
       line-height: 38px;
       font-stretch:semi-condensed;
-      transition: all .25s linear;
+      transition: all .18s linear;
 
     }
       
@@ -519,7 +522,7 @@ h3 {
 
 .location-listing:hover .location-image img {
   filter: blur(2px);
-  transform: scale(1.1);
+  transform: scale(1.18);
 }
 
 @media (hover: none) { 
