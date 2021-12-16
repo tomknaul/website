@@ -27,6 +27,29 @@
 }
 
 
+.loader{
+  position: fixed;
+  background-color: black;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loader.hidden{
+  animation: fadeout .6s;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}
+@keyframes fadeout{
+  100%{
+  opacity: 0;
+  visibility: hidden;
+  }
+}
+
+
 
 .vl {
   border-left: 2.5px solid #85859b;
@@ -39,7 +62,7 @@
   
 }
 
-hr {display:none;}
+
 
 html {
   overflow-y: scroll;
@@ -534,27 +557,7 @@ h3 {
   }
 }
 
-.loader{
-  position: fixed;
-  background-color: black;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
-.loader.hidden{
-  animation: fadeout .6s;
-  animation-fill-mode: forwards;
-  pointer-events: none;
-}
-@keyframes fadeout{
-  100%{
-  opacity: 0;
-  visibility: hidden;
-  }
-}
 
 
 
