@@ -62,7 +62,8 @@ html {
 body {
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: linear-gradient(rgb(1, 1, 1),  rgb(1, 1, 1) , rgb(1, 1, 1));
+  /* background-image: url(../../../test.jpg); */
+  background-color: black;
   -webkit-tap-highlight-color: transparent;
 }
 
